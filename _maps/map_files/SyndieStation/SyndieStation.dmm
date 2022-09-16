@@ -2,176 +2,190 @@
 "a" = (
 /turf/open/space/basic,
 /area/space)
-"b" = (
-/obj/structure/table/reinforced/plasmarglass,
+"c" = (
+/obj/machinery/door/airlock,
+/turf/open/floor/wood/parquet,
+/area/station/service/bar)
+"d" = (
+/obj/structure/table/reinforced/plastitaniumglass,
 /turf/open/space/basic,
 /area/space)
-"c" = (
-/obj/machinery/light/cold/directional/east,
-/turf/open/floor/carpet,
-/area/space)
-"d" = (
+"e" = (
 /obj/machinery/microwave,
 /obj/structure/table/reinforced/plastitaniumglass,
 /turf/open/floor/iron/kitchen/small,
-/area/space)
+/area/station/service/kitchen)
 "g" = (
-/obj/machinery/chem_master/condimaster,
-/turf/open/floor/iron/kitchen/small,
-/area/space)
-"i" = (
-/obj/machinery/smartfridge/drinks{
-	icon_state = "boozeomat"
-	},
-/turf/open/floor/wood/parquet,
-/area/space)
-"j" = (
+/obj/machinery/door/airlock,
 /turf/open/floor/carpet/black,
-/area/space)
-"k" = (
-/obj/structure/table/reinforced/plasmarglass,
-/turf/open/floor/wood/parquet,
-/area/space)
-"l" = (
-/turf/closed/wall/mineral/plastitanium/nodiagonal,
-/area/space)
-"m" = (
-/obj/machinery/vending/snack,
-/turf/open/floor/carpet/black,
-/area/space)
-"p" = (
-/obj/structure/table/reinforced/plastitaniumglass,
-/turf/open/space/basic,
-/area/space)
-"q" = (
-/obj/structure/table/reinforced/plastitaniumglass,
-/turf/open/floor/iron/kitchen/small,
-/area/space)
-"s" = (
-/obj/structure/table/reinforced/rglass,
-/obj/machinery/door/window/left/directional/north,
-/turf/open/floor/iron/kitchen/small,
-/area/space)
-"t" = (
-/obj/machinery/reagentgrinder,
-/obj/structure/table/reinforced/plastitaniumglass,
-/turf/open/floor/wood/parquet,
-/area/space)
-"v" = (
-/obj/effect/landmark/start/assistant,
-/turf/open/floor/carpet,
-/area/space)
-"w" = (
-/obj/structure/closet/secure_closet/freezer/fridge,
-/turf/open/floor/iron/kitchen/small,
-/area/space)
-"x" = (
-/obj/structure/closet/secure_closet/freezer/kitchen,
-/turf/open/floor/iron/kitchen/small,
-/area/space)
-"y" = (
-/obj/machinery/light/cold/directional/east,
-/turf/open/floor/wood/parquet,
-/area/space)
-"A" = (
+/area/station/service/bar)
+"h" = (
 /obj/machinery/chem_dispenser/chem_synthesizer,
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
-/area/space)
-"B" = (
-/obj/machinery/chem_dispenser/drinks/beer{
-	dir = 1
-	},
-/obj/structure/table/reinforced/plastitaniumglass,
-/turf/open/floor/wood/parquet,
-/area/space)
-"D" = (
+/area/station/service/kitchen)
+"i" = (
+/obj/machinery/power/apc/auto_name/directional/south,
+/turf/open/floor/iron/kitchen/small,
+/area/station/service/kitchen)
+"j" = (
+/obj/machinery/vending/cigarette/syndicate,
+/turf/open/floor/carpet/black,
+/area/station/service/bar)
+"k" = (
 /obj/effect/spawner/structure/window/reinforced/plasma,
 /turf/open/space/basic,
 /area/space)
-"E" = (
-/obj/effect/spawner/structure/window/reinforced/plasma,
-/turf/open/floor/plating,
-/area/space)
-"F" = (
-/obj/machinery/oven,
-/turf/open/floor/iron/kitchen/small,
-/area/space)
-"G" = (
-/obj/machinery/door/airlock,
-/turf/open/floor/iron/kitchen/small,
-/area/space)
-"H" = (
-/obj/structure/table/reinforced/plastitaniumglass,
-/obj/item/reagent_containers/cup/glass/shaker,
-/turf/open/floor/wood/parquet,
-/area/space)
-"I" = (
-/turf/open/floor/carpet,
-/area/space)
-"J" = (
+"l" = (
 /obj/machinery/vending/dinnerware,
 /turf/open/floor/iron/kitchen/small,
-/area/space)
-"K" = (
-/obj/machinery/vending/cigarette/syndicate,
-/turf/open/floor/carpet/black,
-/area/space)
-"L" = (
+/area/station/service/kitchen)
+"m" = (
+/turf/open/floor/wood/parquet,
+/area/station/service/bar)
+"n" = (
+/turf/open/floor/carpet,
+/area/station/service/bar)
+"o" = (
+/obj/structure/closet/secure_closet/freezer/fridge,
+/turf/open/floor/iron/kitchen/small,
+/area/station/service/kitchen)
+"p" = (
+/turf/open/floor/iron/kitchen/small,
+/area/station/service/kitchen)
+"r" = (
 /obj/machinery/chem_dispenser/drinks{
 	dir = 1
 	},
 /obj/structure/table/reinforced/plastitaniumglass,
 /turf/open/floor/wood/parquet,
-/area/space)
-"M" = (
-/obj/machinery/power/apc/auto_name/directional/south,
+/area/station/service/bar)
+"s" = (
+/obj/machinery/smartfridge,
+/turf/open/floor/plating,
+/area/station/service/kitchen)
+"t" = (
+/obj/effect/spawner/structure/window/reinforced/plasma,
+/turf/open/floor/plating,
+/area/station/service/bar)
+"u" = (
+/obj/machinery/door/airlock,
+/turf/open/floor/wood/parquet,
+/area/station/service/kitchen)
+"v" = (
+/obj/structure/closet/secure_closet/freezer/kitchen,
 /turf/open/floor/iron/kitchen/small,
-/area/space)
-"N" = (
-/obj/machinery/deepfryer,
+/area/station/service/kitchen)
+"w" = (
+/obj/structure/chair/stool/bar/directional/south,
+/turf/open/floor/wood/parquet,
+/area/station/service/bar)
+"x" = (
+/obj/structure/table/reinforced/plastitaniumglass,
 /turf/open/floor/iron/kitchen/small,
+/area/station/service/kitchen)
+"z" = (
+/obj/machinery/light/cold/directional/east,
+/turf/open/floor/carpet,
+/area/station/service/bar)
+"A" = (
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/station/service/bar)
+"B" = (
+/obj/machinery/light/cold/directional/east,
+/turf/open/floor/wood/parquet,
+/area/station/service/bar)
+"C" = (
+/obj/machinery/light/cold/directional/north,
+/obj/machinery/vending/syndichem,
+/turf/open/floor/carpet,
+/area/station/service/bar)
+"E" = (
+/obj/machinery/chem_dispenser/drinks/beer{
+	dir = 1
+	},
+/obj/structure/table/reinforced/plastitaniumglass,
+/turf/open/floor/wood/parquet,
+/area/station/service/bar)
+"F" = (
+/obj/structure/table/reinforced/plasmarglass,
+/turf/open/space/basic,
 /area/space)
-"O" = (
-/obj/machinery/griddle,
-/turf/open/floor/iron/kitchen/small,
-/area/space)
-"Q" = (
-/turf/open/floor/iron/kitchen/small,
-/area/space)
-"R" = (
+"G" = (
+/obj/structure/table/reinforced/plasmarglass,
+/turf/open/floor/wood/parquet,
+/area/station/service/bar)
+"H" = (
+/obj/effect/spawner/structure/window/reinforced/plasma,
+/turf/open/floor/plating,
+/area/station/service/kitchen)
+"I" = (
+/turf/open/floor/carpet/black,
+/area/station/service/bar)
+"J" = (
+/obj/machinery/vending/boozeomat/all_access,
+/turf/open/floor/plating,
+/area/station/service/kitchen)
+"K" = (
 /obj/machinery/power/apc/auto_name/directional/west,
 /obj/machinery/light/cold/directional/south,
 /obj/machinery/chem_master/condimaster,
 /turf/open/floor/wood/parquet,
-/area/space)
-"T" = (
-/obj/machinery/door/airlock,
+/area/station/service/bar)
+"L" = (
+/obj/machinery/deepfryer,
+/turf/open/floor/iron/kitchen/small,
+/area/station/service/kitchen)
+"M" = (
+/obj/machinery/vending/snack,
+/turf/open/floor/carpet/black,
+/area/station/service/bar)
+"N" = (
+/obj/machinery/chem_master/condimaster,
+/turf/open/floor/iron/kitchen/small,
+/area/station/service/kitchen)
+"O" = (
+/obj/machinery/griddle,
+/turf/open/floor/iron/kitchen/small,
+/area/station/service/kitchen)
+"Q" = (
+/obj/machinery/reagentgrinder,
+/obj/structure/table/reinforced/plastitaniumglass,
 /turf/open/floor/wood/parquet,
-/area/space)
+/area/station/service/bar)
+"R" = (
+/obj/machinery/door/airlock,
+/turf/open/floor/iron/kitchen/small,
+/area/station/service/kitchen)
+"S" = (
+/obj/structure/table/reinforced/plastitaniumglass,
+/obj/item/reagent_containers/cup/glass/shaker,
+/turf/open/floor/wood/parquet,
+/area/station/service/bar)
+"T" = (
+/obj/effect/landmark/start/assistant,
+/turf/open/floor/carpet,
+/area/station/service/bar)
 "U" = (
-/obj/machinery/vending/boozeomat/all_access,
-/turf/open/floor/plating,
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/space)
 "V" = (
-/obj/machinery/smartfridge,
-/turf/open/floor/plating,
-/area/space)
+/obj/machinery/oven,
+/turf/open/floor/iron/kitchen/small,
+/area/station/service/kitchen)
 "W" = (
-/obj/machinery/door/airlock,
-/turf/open/floor/carpet/black,
-/area/space)
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/station/service/kitchen)
 "X" = (
+/obj/machinery/smartfridge/drinks{
+	icon_state = "boozeomat"
+	},
 /turf/open/floor/wood/parquet,
-/area/space)
-"Y" = (
-/obj/structure/chair/stool/bar/directional/south,
-/turf/open/floor/wood/parquet,
-/area/space)
+/area/station/service/bar)
 "Z" = (
-/obj/machinery/light/cold/directional/north,
-/obj/machinery/vending/syndichem,
-/turf/open/floor/carpet,
-/area/space)
+/obj/structure/table/reinforced/rglass,
+/obj/machinery/door/window/left/directional/north,
+/turf/open/floor/iron/kitchen/small,
+/area/station/service/kitchen)
 
 (1,1,1) = {"
 a
@@ -28265,7 +28279,7 @@ a
 a
 a
 a
-D
+k
 a
 a
 a
@@ -28769,7 +28783,7 @@ a
 a
 a
 a
-l
+U
 a
 a
 a
@@ -29278,8 +29292,8 @@ a
 a
 a
 a
-b
-p
+F
+d
 a
 a
 a
@@ -29522,21 +29536,21 @@ a
 a
 a
 a
-l
-l
-W
-l
-l
-l
-T
-l
-l
-l
-l
 A
-l
-l
-l
+A
+g
+A
+A
+A
+c
+A
+W
+W
+W
+h
+W
+W
+W
 a
 a
 a
@@ -29774,22 +29788,22 @@ a
 a
 a
 a
-l
-K
-I
+A
+j
+n
+M
 m
 X
+m
+K
+W
+N
+e
+e
+p
 i
-X
-R
-l
-g
-d
-d
-Q
-M
-l
-a
+W
+U
 a
 a
 a
@@ -30026,22 +30040,22 @@ a
 a
 a
 a
-E
+t
+n
 I
-j
-I
-Y
-k
-X
-X
-T
-Q
-Q
-Q
-Q
-Q
+n
+w
 G
-a
+m
+m
+u
+p
+p
+p
+p
+p
+R
+U
 a
 a
 a
@@ -30278,22 +30292,22 @@ a
 a
 a
 a
-E
-j
+t
 I
-j
-Y
-k
-X
-H
-U
+n
+I
+w
+G
+m
+S
 J
-Q
-Q
-Q
-Q
-V
-a
+l
+p
+p
+p
+p
+s
+U
 a
 a
 a
@@ -30530,22 +30544,22 @@ a
 a
 a
 a
-l
+A
+C
+I
+T
+w
+G
+m
+m
 Z
-j
-v
-Y
-k
-X
-X
-s
-Q
-Q
-q
-Q
-Q
-s
-a
+p
+p
+x
+p
+p
+Z
+U
 a
 a
 a
@@ -30782,22 +30796,22 @@ a
 a
 a
 a
-E
-j
+t
 I
-j
-Y
-k
-X
-B
+n
+I
+w
+G
+m
 E
+H
 O
-Q
-q
-Q
-q
-l
-a
+p
+x
+p
+x
+W
+U
 a
 a
 a
@@ -31034,21 +31048,21 @@ a
 a
 a
 a
-E
+t
+n
 I
-j
-I
-Y
-k
-X
-L
-E
-F
-Q
-q
-Q
-q
-l
+n
+w
+G
+m
+r
+H
+V
+p
+x
+p
+x
+W
 a
 a
 a
@@ -31286,21 +31300,21 @@ a
 a
 a
 a
-l
-j
-c
-j
-Y
-k
-y
-t
-l
+A
+I
+z
+I
+w
+G
+B
+Q
+W
+v
+p
 x
-Q
-q
-Q
-N
-l
+p
+L
+W
 a
 a
 a
@@ -31538,21 +31552,21 @@ a
 a
 a
 a
-l
-l
-l
-l
-l
-l
-l
-l
-l
-w
-Q
-Q
-Q
-N
-l
+A
+A
+A
+A
+A
+A
+A
+A
+W
+o
+p
+p
+p
+L
+W
 a
 a
 a
@@ -31798,13 +31812,13 @@ a
 a
 a
 a
-l
-l
-l
-l
-l
-l
-l
+W
+W
+W
+W
+W
+W
+W
 a
 a
 a
