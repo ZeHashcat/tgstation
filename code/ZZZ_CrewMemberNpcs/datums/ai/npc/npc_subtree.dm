@@ -26,6 +26,6 @@
 
 	switch(pawn_job)
 		if("Captain")
-			return "Bridge"
+			return "Bridge Center"
 		if("Botanist")
 			return "Hydroponics"

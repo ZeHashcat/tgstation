@@ -26,7 +26,7 @@ multiple modular subtrees with behaviors
 	///Can the AI remain in control if there is a client?
 	var/continue_processing_when_client = FALSE
 	///distance to give up on target
-	var/max_target_distance = 14
+	var/max_target_distance = 250
 	///Cooldown for new plans, to prevent AI from going nuts if it can't think of new plans and looping on end
 	COOLDOWN_DECLARE(failed_planning_cooldown)
 	///All subtrees this AI has available, will run them in order, so make sure they're in the order you want them to run. On initialization of this type, it will start as a typepath(s) and get converted to references of ai_subtrees found in SSai_controllers when init_subtrees() is called

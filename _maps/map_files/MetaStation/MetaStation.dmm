@@ -22056,7 +22056,7 @@
 "ifE" = (
 /obj/structure/cable,
 /obj/effect/spawner/random/engineering/tracking_beacon,
-/obj/effect/landmark/navigate_destination/bridge,
+/obj/effect/landmark/navigate_destination/npc/command/bridge,
 /turf/open/floor/iron/dark,
 /area/station/command/bridge)
 "ifF" = (
@@ -58665,6 +58665,7 @@
 "uFf" = (
 /obj/machinery/holopad,
 /obj/effect/spawner/random/engineering/tracking_beacon,
+/obj/effect/landmark/navigate_destination/npc/service/lounge,
 /turf/open/floor/wood,
 /area/station/commons/lounge)
 "uFh" = (
@@ -64359,7 +64360,6 @@
 /obj/effect/turf_decal/delivery,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light_switch/directional/east,
-/obj/effect/landmark/navigate_destination/hydro,
 /turf/open/floor/iron,
 /area/station/service/hydroponics)
 "wFV" = (

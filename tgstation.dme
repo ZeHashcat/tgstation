@@ -4741,6 +4741,7 @@
 #include "code\ZZZ_CrewMemberNpcs\datums\ai\npc\npc_controller.dm"
 #include "code\ZZZ_CrewMemberNpcs\datums\ai\npc\npc_subtree.dm"
 #include "code\ZZZ_CrewMemberNpcs\datums\mind\initialization.dm"
+#include "code\ZZZ_CrewMemberNpcs\game\objects\effects\landmarks.dm"
 #include "code\ZZZ_CrewMemberNpcs\modules\jobs\job_types\_job.dm"
 #include "code\ZZZ_CrewMemberNpcs\modules\mob\dead\new_player\new_player.dm"
 #include "interface\interface.dm"
