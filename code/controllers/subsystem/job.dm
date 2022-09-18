@@ -349,6 +349,8 @@ SUBSYSTEM_DEF(job)
 		var/mob/dead/new_player/player = i
 		if(player.ready == PLAYER_READY_TO_PLAY && player.check_preferences() && player.mind && is_unassigned_job(player.mind.assigned_role))
 			unassigned += player
+		else if(player.ready == PLAYER_READY_TO_PLAY && !player.check_preferences() && player.mind && is_unassigned_job(player.mind.assigned_role))
+			unassigned += player
 
 	initial_players_to_assign = unassigned.len
 
@@ -425,6 +427,11 @@ SUBSYSTEM_DEF(job)
 					JobDebug("FOC job filled and not overflow, Player: [player], Job: [job], Current: [job.current_positions], Limit: [job.spawn_positions]")
 					shuffledoccupations -= job
 					continue
+
+				if(!player.check_preferences())
+					AssignRole(player, job, do_eligibility_checks = FALSE)
+					unassigned -= player
+					break
 
 				// Filter any job that doesn't fit the current level.
 				var/player_job_level = player.client?.prefs.job_preferences[job.title]
@@ -619,6 +626,8 @@ SUBSYSTEM_DEF(job)
 				continue
 			if(job.required_playtime_remaining(player.client))
 				young++
+				continue
+			if(!player.check_preferences())
 				continue
 			switch(player.client.prefs.job_preferences[job.title])
 				if(JP_HIGH)

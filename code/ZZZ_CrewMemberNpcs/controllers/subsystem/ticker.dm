@@ -1,14 +1,13 @@
 /datum/controller/subsystem/ticker/proc/create_npc_crew()
 	for(var/datum/job_department/department as anything in SSjob.joinable_departments)
 		var/open = 0
-		var/list/exceptions = list()
 
-		if(department.department_name == "Assistant")
+		if(department.department_name != "Service")
+			CHECK_TICK
 			continue
 
 		for(var/datum/job/job as anything in department.department_jobs)
 			if(job.total_positions == -1)
-				exceptions += job.title
 				continue
 
 			var/open_slots = job.total_positions - job.current_positions
@@ -32,11 +31,47 @@
 					to_chat("[job] wasn't able to be spawned.")
 					continue
 
-				var/mob/living/carbon/human/character = new(new_guy.mind.assigned_role.get_roundstart_spawn_point())
+				var/atom/destination = new_guy.mind.assigned_role.get_roundstart_spawn_point()
+				var/mob/living/carbon/human/character = new(destination)
 				character.name = new_guy.mind.name
 				new_guy.mind.transfer_to(character)
 				qdel(new_guy)
 
+				SSticker.minds += character.mind
+
 				open--
-				CHECK_TICK
+		CHECK_TICK
+
+/datum/controller/subsystem/ticker/proc/create_npc_players()
+	var/open = 0
+	var/real_players = GLOB.player_list.len
+
+	for(var/datum/job_department/department as anything in SSjob.joinable_departments)
+		for(var/datum/job/job as anything in department.department_jobs)
+			if(job.type == /datum/job/assistant)
+				continue
+
+			if(job.total_positions == -1)
+				continue
+
+			open += job.total_positions
+
+			while (open != 0)
+				if(real_players != 0)
+					real_players--
+					open--
+					continue
+
+				var/mob/dead/new_player/player = new()
+				player.name = "Station Crewmember"
+				player.ready = PLAYER_READY_TO_PLAY
+				player.mind_initialize()
+				player.mind.name = "Station Crewmember NPC"
+
+				open--
+
+
+
+
+
 

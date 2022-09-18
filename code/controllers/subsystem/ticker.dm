@@ -215,6 +215,9 @@ SUBSYSTEM_DEF(ticker)
 
 	mode = new /datum/game_mode/dynamic
 
+	//Add NPC's to GLOB.new_player_list
+	create_npc_players()
+
 	CHECK_TICK
 	//Configure mode and assign player to special mode stuff
 	var/can_continue = 0
@@ -248,7 +251,7 @@ SUBSYSTEM_DEF(ticker)
 	CHECK_TICK
 	GLOB.start_landmarks_list = shuffle(GLOB.start_landmarks_list) //Shuffle the order of spawn points so they dont always predictably spawn bottom-up and right-to-left
 	create_characters() //Create player characters
-	create_npc_crew()
+	//create_npc_crew()
 	collect_minds()
 	equip_characters()
 
@@ -343,6 +346,10 @@ SUBSYSTEM_DEF(ticker)
 			var/atom/destination = player.mind.assigned_role.get_roundstart_spawn_point()
 			if(!destination) // Failed to fetch a proper roundstart location, won't be going anywhere.
 				continue
+			if(!player.check_preferences())
+				player.create_character_npc(player, destination)
+				CHECK_TICK
+				continue
 			player.create_character(destination)
 		CHECK_TICK
 
@@ -409,7 +416,7 @@ SUBSYSTEM_DEF(ticker)
 			var/acting_captain = !is_captain_job(player_assigned_role)
 			SSjob.promote_to_captain(new_player_living, acting_captain)
 			OnRoundstart(CALLBACK(GLOBAL_PROC, .proc/minor_announce, player_assigned_role.get_captaincy_announcement(new_player_living)))
-		if((player_assigned_role.job_flags & JOB_ASSIGN_QUIRKS) && ishuman(new_player_living) && CONFIG_GET(flag/roundstart_traits))
+		if((player_assigned_role.job_flags & JOB_ASSIGN_QUIRKS) && ishuman(new_player_living) && CONFIG_GET(flag/roundstart_traits) && new_player_mob.check_preferences())
 			if(new_player_mob.client?.prefs?.should_be_random_hardcore(player_assigned_role, new_player_living.mind))
 				new_player_mob.client.prefs.hardcore_random_setup(new_player_living)
 			SSquirks.AssignQuirks(new_player_living, new_player_mob.client)
