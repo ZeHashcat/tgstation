@@ -429,8 +429,9 @@ SUBSYSTEM_DEF(job)
 					continue
 
 				if(!player.check_preferences())
-					AssignRole(player, job, do_eligibility_checks = FALSE)
-					unassigned -= player
+					if(job.type != /datum/job/assistant)
+						AssignRole(player, job, do_eligibility_checks = FALSE)
+						unassigned -= player
 					break
 
 				// Filter any job that doesn't fit the current level.
@@ -456,6 +457,9 @@ SUBSYSTEM_DEF(job)
 	// Hand out random jobs to the people who didn't get any in the last check
 	// Also makes sure that they got their preference correct
 	for(var/mob/dead/new_player/player in unassigned)
+		if(!player.check_preferences())
+			HandleUnassignedNpc(player)
+			continue
 		HandleUnassigned(player)
 	JobDebug("DO, Ending handle unassigned.")
 
