@@ -22056,6 +22056,7 @@
 "ifE" = (
 /obj/structure/cable,
 /obj/effect/spawner/random/engineering/tracking_beacon,
+/obj/effect/landmark/navigate_destination/bridge,
 /turf/open/floor/iron/dark,
 /area/station/command/bridge)
 "ifF" = (
@@ -62938,7 +62939,7 @@
 /obj/machinery/camera/directional/east{
 	c_tag = "Outer Vault";
 	name = "storage wing camera";
-	network = list("ss13", "vault")
+	network = list("ss13","vault")
 	},
 /obj/structure/reagent_dispensers/watertank,
 /obj/effect/turf_decal/trimline/brown/filled/corner,
@@ -64358,6 +64359,7 @@
 /obj/effect/turf_decal/delivery,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light_switch/directional/east,
+/obj/effect/landmark/navigate_destination/hydro,
 /turf/open/floor/iron,
 /area/station/service/hydroponics)
 "wFV" = (

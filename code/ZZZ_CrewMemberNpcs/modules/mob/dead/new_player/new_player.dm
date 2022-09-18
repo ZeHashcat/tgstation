@@ -8,5 +8,6 @@
 	if(!isAI(spawning_mob)) // Unfortunately there's still snowflake AI code out there.
 		mind.transfer_to(spawning_mob) //won't transfer key since the mind is not active
 		mind.set_original_character(spawning_mob)
+		spawning_mob.ai_controller = new /datum/ai_controller/npc(spawning_mob)
 	. = spawning_mob
 	new_character = .
