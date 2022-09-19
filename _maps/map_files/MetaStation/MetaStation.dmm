@@ -2428,6 +2428,11 @@
 /obj/item/pen,
 /turf/open/floor/iron,
 /area/station/maintenance/port/aft)
+"aRH" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/landmark/navigate_destination/npc/service/lounge/bar_counter,
+/turf/open/floor/wood,
+/area/station/commons/lounge)
 "aRI" = (
 /turf/open/floor/circuit/green,
 /area/station/science/robotics/mechbay)
@@ -4596,6 +4601,7 @@
 /area/station/maintenance/fore)
 "bDR" = (
 /obj/machinery/airalarm/directional/east,
+/obj/effect/landmark/navigate_destination/npc/service/lounge/gambling_machine_area,
 /turf/open/floor/wood,
 /area/station/commons/lounge)
 "bDW" = (
@@ -20059,6 +20065,10 @@
 /obj/structure/fluff/iced_abductor,
 /turf/open/misc/asteroid/basalt/airless,
 /area/space/nearstation)
+"htV" = (
+/obj/effect/landmark/navigate_destination/npc/service/lounge/vending_machine_area,
+/turf/open/floor/wood,
+/area/station/commons/lounge)
 "htY" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -22056,6 +22066,7 @@
 "ifE" = (
 /obj/structure/cable,
 /obj/effect/spawner/random/engineering/tracking_beacon,
+/obj/effect/landmark/navigate_destination/npc/command/bridge,
 /turf/open/floor/iron/dark,
 /area/station/command/bridge)
 "ifF" = (
@@ -37920,7 +37931,6 @@
 /obj/effect/turf_decal/tile/bar{
 	dir = 1
 	},
-/obj/effect/landmark/navigate_destination/bar,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/item/reagent_containers/cup/rag,
@@ -38201,6 +38211,7 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 1
 	},
+/obj/effect/landmark/navigate_destination/npc/service/lounge/theater_visitor,
 /turf/open/floor/wood,
 /area/station/commons/lounge)
 "nCu" = (
@@ -56744,6 +56755,7 @@
 "tXH" = (
 /obj/structure/cable,
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/landmark/navigate_destination/npc/service/lounge/kitchen_counter,
 /turf/open/floor/wood,
 /area/station/commons/lounge)
 "tXU" = (
@@ -58664,6 +58676,7 @@
 "uFf" = (
 /obj/machinery/holopad,
 /obj/effect/spawner/random/engineering/tracking_beacon,
+/obj/effect/landmark/navigate_destination/npc/service/lounge,
 /turf/open/floor/wood,
 /area/station/commons/lounge)
 "uFh" = (
@@ -60337,7 +60350,6 @@
 	name = "Kitchen"
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/landmark/navigate_destination/kitchen,
 /obj/effect/mapping_helpers/airlock/access/any/service/bar,
 /obj/effect/mapping_helpers/airlock/access/any/service/kitchen,
 /turf/open/floor/iron/cafeteria,
@@ -62938,7 +62950,7 @@
 /obj/machinery/camera/directional/east{
 	c_tag = "Outer Vault";
 	name = "storage wing camera";
-	network = list("ss13", "vault")
+	network = list("ss13","vault")
 	},
 /obj/structure/reagent_dispensers/watertank,
 /obj/effect/turf_decal/trimline/brown/filled/corner,
@@ -101942,7 +101954,7 @@ twN
 lkc
 hhN
 uOO
-hkG
+htV
 xEJ
 yjc
 gvm
@@ -102716,7 +102728,7 @@ kSw
 oPx
 gvm
 uhP
-vgb
+aRH
 tbq
 pof
 owi
