@@ -1,9 +1,10 @@
 /datum/ai_planning_subtree/npc_do_job/SelectBehaviors(datum/ai_controller/npc/controller, delta_time)
 	var/mob/controller_pawn = controller.pawn
 	var/area/this_area = get_area(controller_pawn)
+	var/area/job_area = get_job_area(controller_pawn)
 	var/job_location = get_job_location(controller_pawn)
 
-	if(this_area != get_job_area(controller_pawn))
+	if(this_area.type != job_area)
 		if(job_location == null)
 			return
 		controller.queue_behavior(/datum/ai_behavior/npc_goto_location, job_location)

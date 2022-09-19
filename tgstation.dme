@@ -4735,6 +4735,8 @@
 #include "code\modules\wiremod\shell\shell_items.dm"
 #include "code\modules\zombie\items.dm"
 #include "code\modules\zombie\organs.dm"
+#include "code\ZZZ_CrewMemberNpcs\__DEFINES\turfs.dm"
+#include "code\ZZZ_CrewMemberNpcs\__HELPERS\npc.dm"
 #include "code\ZZZ_CrewMemberNpcs\controllers\subsystem\job.dm"
 #include "code\ZZZ_CrewMemberNpcs\controllers\subsystem\ticker.dm"
 #include "code\ZZZ_CrewMemberNpcs\datums\ai\npc\npc_behaviour.dm"
