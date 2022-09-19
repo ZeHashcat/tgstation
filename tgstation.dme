@@ -4739,6 +4739,7 @@
 #include "code\ZZZ_CrewMemberNpcs\__HELPERS\npc.dm"
 #include "code\ZZZ_CrewMemberNpcs\controllers\subsystem\job.dm"
 #include "code\ZZZ_CrewMemberNpcs\controllers\subsystem\ticker.dm"
+#include "code\ZZZ_CrewMemberNpcs\datums\ai\idle_behaviours\idle_npc.dm"
 #include "code\ZZZ_CrewMemberNpcs\datums\ai\npc\npc_behaviour.dm"
 #include "code\ZZZ_CrewMemberNpcs\datums\ai\npc\npc_controller.dm"
 #include "code\ZZZ_CrewMemberNpcs\datums\ai\npc\npc_subtree.dm"

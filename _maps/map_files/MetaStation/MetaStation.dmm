@@ -7815,6 +7815,11 @@
 /obj/effect/mapping_helpers/airlock/access/all/supply/general,
 /turf/open/floor/plating,
 /area/station/maintenance/port/fore)
+"cUE" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/effect/landmark/navigate_destination/npc/command/bridge/Cargo,
+/turf/open/floor/iron/dark,
+/area/station/command/bridge)
 "cUH" = (
 /obj/effect/turf_decal/tile/neutral/fourcorners,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -23042,6 +23047,7 @@
 /obj/structure/chair/comfy/black{
 	dir = 1
 	},
+/obj/effect/landmark/navigate_destination/npc/command/bridge/captain_chair,
 /turf/open/floor/carpet,
 /area/station/command/bridge)
 "itB" = (
@@ -31306,6 +31312,11 @@
 /obj/structure/cable,
 /turf/open/floor/iron,
 /area/station/engineering/main)
+"lir" = (
+/obj/effect/landmark/event_spawn,
+/obj/effect/landmark/navigate_destination/npc/command/bridge/security,
+/turf/open/floor/iron/dark,
+/area/station/command/bridge)
 "liz" = (
 /obj/structure/disposalpipe/segment,
 /obj/machinery/door/firedoor,
@@ -34136,6 +34147,10 @@
 	},
 /turf/open/floor/engine,
 /area/station/engineering/supermatter)
+"mkJ" = (
+/obj/effect/landmark/navigate_destination/npc/command/bridge/medical,
+/turf/open/floor/iron/dark,
+/area/station/command/bridge)
 "mkO" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -60067,6 +60082,11 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
 /turf/open/floor/iron/white/smooth_large,
 /area/station/medical/treatment_center)
+"vfc" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/effect/landmark/navigate_destination/npc/command/bridge/engineering,
+/turf/open/floor/iron/dark,
+/area/station/command/bridge)
 "vfh" = (
 /obj/machinery/door/window/right/directional/north{
 	dir = 8;
@@ -64835,6 +64855,7 @@
 /obj/effect/landmark/event_spawn,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/effect/landmark/navigate_destination/npc/command/bridge/Conference,
 /turf/open/floor/iron/dark,
 /area/station/command/bridge)
 "wOS" = (
@@ -94755,7 +94776,7 @@ dsQ
 dsQ
 dho
 dhp
-kcn
+vfc
 qXF
 aMB
 jMY
@@ -95525,7 +95546,7 @@ aaf
 dsQ
 hfa
 dUj
-gGy
+mkJ
 hmq
 fUj
 mES
@@ -97067,7 +97088,7 @@ aaf
 dsQ
 qkA
 dUj
-qVc
+lir
 wNh
 veO
 hXK
@@ -97839,7 +97860,7 @@ dsQ
 dsQ
 dho
 rhL
-sLd
+cUE
 qXF
 aMB
 hQv

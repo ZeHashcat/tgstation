@@ -50,7 +50,7 @@ have ways of interacting with a specific mob and control it.
 	)
 	blackboard = list()
 	ai_movement = /datum/ai_movement/jps
-	//idle_behavior = /datum/idle_behavior/idle_npc
+	idle_behavior = /datum/idle_behavior/idle_npc
 
 /datum/ai_controller/npc/get_access()
 	var/mob/living/carbon/human/npc = src.pawn

@@ -10,7 +10,7 @@
 		controller.queue_behavior(/datum/ai_behavior/npc_goto_location, job_location)
 	else
 		//do job
-
+	return
 
 
 /datum/ai_planning_subtree/proc/get_job_area(var/mob/controller_pawn)
