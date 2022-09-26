@@ -9,24 +9,27 @@
 			return
 		controller.queue_behavior(/datum/ai_behavior/npc_goto_location, job_location)
 	else
-		//do job
-	return
+		do_job_select_profession
 
 
 /datum/ai_planning_subtree/proc/get_job_area(var/mob/controller_pawn)
-	var/datum/job/pawn_job = controller_pawn.job
-
-	switch(pawn_job)
+	switch(controller_pawn.job)
 		if("Captain")
 			return /area/station/command/bridge
 		if("Botanist")
 			return /area/station/service/hydroponics
 
 /datum/ai_planning_subtree/proc/get_job_location(var/mob/controller_pawn)
-	var/datum/job/pawn_job = controller_pawn.job
-
-	switch(pawn_job)
+	switch(controller_pawn.job)
 		if("Captain")
 			return "Bridge Center"
 		if("Botanist")
 			return "Hydroponics"
+
+/datum/ai_planning_subtree/proc/do_job_select_profession(var/mob/controller_pawn, delta_time)
+	switch(controller_pawn.job)
+		do_job_captain(controller_pawn, delta_time)
+
+/datum/ai_planning_subtree/proc/do_job_captain(var/mob/controller_pawn, delta_time)
+
+	controller.queue_behavior(/datum/ai_behavior/npc_goto_location, job_location)

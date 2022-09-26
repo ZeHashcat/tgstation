@@ -158,14 +158,8 @@ multiple modular subtrees with behaviors
 		var/action_delta_time = max(current_behavior.action_cooldown * 0.1, delta_time)
 
 		if(current_behavior.behavior_flags & AI_BEHAVIOR_REQUIRE_MOVEMENT) //Might need to move closer
-			var/area/job_area = get_job_area(pawn)
-			var/area/current_area = get_area(pawn)
-			if(current_area.type == job_area)
-				ai_movement.stop_moving_towards(src)
-
 			if(!current_movement_target)
 				stack_trace("[pawn] wants to perform action type [current_behavior.type] which requires movement, but has no current movement target!")
-				ai_movement.stop_moving_towards(src)
 				return //This can cause issues, so don't let these slide.
 
 			if(current_behavior.required_distance >= get_dist(pawn, current_movement_target)) ///Are we close enough to engage?
